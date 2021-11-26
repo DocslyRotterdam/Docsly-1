@@ -1,0 +1,92 @@
+
+
+.title{
+    @media screen and (min-width:1400px) {
+        font-size: 4rem;
+    }
+}
+
+.titleAdd{
+@media screen and (max-width:1400px) {
+  font-size: 2.5rem;
+  margin:0 auto;
+  text-align: center;
+}  
+}
+
+.buttonFill{
+    padding:0.8rem 1.5rem;
+    border-style: solid;
+    color:white;
+    font-weight: 700;
+    border-color: white;
+    display: inline-flex;
+    gap:0.5rem;
+    
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition-duration: 0.3s;
+  &:hover{
+    color:black;
+}
+  &:hover .hiddenWave{
+    transform: translate(0) rotate(0);
+}
+
+}
+.reverse{
+  @media screen and (max-width:700px) {
+    margin:0 auto;
+    margin-left: auto;
+  }
+  &:hover{
+    color:white !important;
+}
+}
+.black{
+  background-color: black;
+}
+
+.hiddenWave{
+position: absolute;
+width: 120%;
+height: 100%;
+z-index: -1;
+top:0;
+left:0;
+background-color: white;
+transform: translateY(120%) rotate(-5deg);
+transition-duration: 0.4s;
+
+}
+
+
+.footer{
+  width:100%;
+ background-color: rgba(0, 0, 0, 0.89);
+  color:white;
+  gap:0.5rem;
+  z-index: 100;
+  font-size: 1rem;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  flex-direction: row-reverse;
+  border-top-style: solid;
+  border-top-width: 0.1px;
+  border-color: rgba(255, 255, 255, 0.322);
+  transform: translateY(100%);
+  opacity: 1;
+  box-sizing: border-box;
+  padding:0.5rem 1rem;
+
+}
+
+.a{
+  margin-right: auto;
+  cursor: pointer;
+}
+

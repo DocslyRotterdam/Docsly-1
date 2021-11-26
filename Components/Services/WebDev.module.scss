@@ -1,0 +1,65 @@
+.WebDev{
+    width:100%;
+    background-color: #81d4fa;
+    box-sizing: border-box;
+    border-width: 0;
+    padding:1rem;
+    position: relative;
+    margin-top: 2rem;
+   
+    padding-bottom: 6rem;
+    display: flex;
+    color: rgb(54, 54, 54);
+    margin-bottom: 0;
+  
+    @media screen and (max-width:1000px) {
+        flex-direction: column;
+        align-items: center;
+    }
+    @media screen and (min-width:800px) {
+        padding-bottom: 8rem;
+
+    }
+    @media screen and (min-width:1200px) {
+        padding-bottom: 10rem;
+
+    }
+}
+
+.ImgWrapper{
+    position: relative;
+    width:500px;
+    height: 500px;
+    max-width: 100%;
+    @media screen and (min-width:500px) {
+        min-width: 500px;
+
+    }
+}
+
+.section2Wrapper{
+flex-grow: 1;
+max-width: 800px;
+margin:0 auto;
+}
+
+.BottomTriangle{
+    width: 100%;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-style: solid;
+    border-color: #ef6c00;
+    background-color: #ef6c00;
+   height: 6rem;
+    @media screen and (min-width:800px) {
+        height: 8rem;
+
+    }
+    @media screen and (min-width:1200px) {
+        height: 10rem;
+
+    }
+}

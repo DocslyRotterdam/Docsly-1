@@ -1,0 +1,50 @@
+.Technologies{
+    width:100%;
+    background-color: white;
+    padding:3rem 1rem;
+    box-sizing: border-box;
+}
+
+
+.ImgWrapper{
+    position: relative;
+   width: 100%;
+   height: 300px;
+    
+}
+
+.Card{
+    box-shadow: 0px 0px 10px 0px black;
+    box-sizing: border-box;
+    padding:1rem;
+    width: 400px;
+    min-height: 600px;
+    height: 100%;
+    max-width:90% ;
+    border-radius: 1rem;
+    text-align: center;
+    opacity: 0;
+    margin:0 auto;
+}
+
+.CardWrapper{
+    
+    width: 100%;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr;
+    @media screen and (min-width:800px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (min-width:1200px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media screen and (min-width:1800px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.IconWrap{
+    font-size: clamp(2rem, 2rem, 2rem);
+    font-size: 1rem;
+}

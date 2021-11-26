@@ -1,0 +1,67 @@
+.WhyUs{
+    width: 100%;
+    background-color: #5B4099;
+    min-height: 100px;
+    color:white !important;
+    padding:1rem;
+    box-sizing: border-box;
+}
+
+
+
+.CircleWrapper{
+    box-sizing: border-box;
+    width:150px;
+    height: 150px;
+    padding:2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 0px white;
+    border-radius: 50%;
+    font-size: 6rem;
+    color:#33332D;
+    background-color: white;
+    
+}
+
+.CardWrapper{
+    width: 100%;
+    padding-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    @media screen and (min-width:800px) {
+        grid-template-columns: repeat(2,1fr);
+    }
+    @media screen and (min-width:1200px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.Ul{
+    box-sizing: border-box;
+    padding:0.5rem 1.5rem;
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+    overflow:hidden;
+}
+
+.Article{
+    width:100%;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    padding:1rem;
+    overflow-x: hidden;
+    text-overflow: hidden;
+    margin:auto;
+    
+  
+}

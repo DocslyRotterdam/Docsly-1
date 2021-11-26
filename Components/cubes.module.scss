@@ -1,0 +1,60 @@
+
+
+.wrapper{
+    width:150px;
+    height: 150px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap:0.3rem;
+    margin:0 auto;
+}
+
+.Cube{
+    width:100%;
+    height: 100%;
+    border-radius: 0.3rem;
+    background-color: white;
+    animation: rotateCube 1s ease;
+}
+@keyframes rotateCube {
+    to{
+        transform: rotate(90deg);
+    }
+}
+
+.wrapper :nth-child(2){
+    
+    animation: animRock1 1s ease forwards 0.3s;
+    
+}
+.wrapper :nth-child(3){
+    
+    animation: animRock2 1s ease forwards 0.3s;
+}
+.wrapper :nth-child(6){
+    
+    animation: animRock3 1s ease forwards 0.3s;
+}
+
+@keyframes animRock1 {
+    to{
+        
+        transform: translate(100%,-100%) rotate(45deg);
+        background-color: blue;
+    }
+}
+@keyframes animRock2 {
+    to{
+        
+        transform: translate(150%,-150%) rotate(90deg);
+        background-color: green;
+    }
+}
+@keyframes animRock3 {
+    to{
+        
+        transform: translate(100%,-80%) rotate(35deg);
+        background-color: yellow;
+    }
+}

@@ -1,0 +1,43 @@
+
+
+.wrapper{
+    width:150px;
+    height: 150px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap:0.2rem;
+    box-sizing: border-box;
+    padding:0.5rem;
+    margin:0;
+    @media screen and (max-width:700px) {
+        width:30px !important;
+        height: 30px !important;
+    }
+}
+
+.Cube{
+    width:100%;
+    height: 100%;
+    border-radius: 0.1rem;
+    background-color: white;
+    animation: rotateCube 1s ease;
+}
+
+
+.wrapper :nth-child(2){
+    
+    background-color: blue;
+    transform: translate(100%,-100%) rotate(45deg);
+
+}
+.wrapper :nth-child(3){
+    transform: translate(150%,-150%) rotate(90deg);
+
+    background-color: green;
+}
+.wrapper :nth-child(6){
+    transform: translate(100%,-80%) rotate(35deg);
+
+    background-color: yellow;
+}

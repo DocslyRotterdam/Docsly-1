@@ -1,0 +1,68 @@
+.WebSite{
+    width:100%;
+    background-color: #ef6c00;
+    box-sizing: border-box;
+    padding:1rem;
+    position:relative;
+    padding-bottom: 6rem;
+    display: flex;
+    border-width: 0;
+    flex-direction: row-reverse;
+    color: white;
+
+  
+
+    @media screen and (max-width:1000px) {
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    @media screen and (min-width:800px) {
+        padding-bottom: 8rem;
+
+    }
+    @media screen and (min-width:1200px) {
+        padding-bottom: 10rem;
+
+    }
+}
+
+.ImgWrapper{
+    position: relative;
+    width:500px;
+    height: 500px;
+    max-width: 100%;
+    @media screen and (min-width:500px) {
+        min-width: 500px;
+
+    }
+}
+
+.section2Wrapper{
+flex-grow: 1;
+max-width: 800px;
+margin:0 auto;
+}
+
+.BottomTriangle{
+    width: 100%;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    position:absolute;
+    bottom: 0;
+    left: 0;
+  
+    right: 0;
+    border-style: solid;
+    border-bottom-width: 3px;
+    background-color: #e1bee7;
+    border-color: #e1bee7;
+   height: 6rem;
+    @media screen and (min-width:800px) {
+        height: 8rem;
+
+    }
+    @media screen and (min-width:1200px) {
+        height: 10rem;
+
+    }
+}
