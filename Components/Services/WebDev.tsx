@@ -5,7 +5,7 @@ const WebDev: React.FC = () => {
   return (
     <div id="WebDev titleAdd" className={styles.WebDev}>
       <section className={styles.ImgWrapper}>
-        <Image src="/webDDev.svg" layout="fill" objectFit="contain" />
+        <Image alt="" src="/webDDev.svg" layout="fill" objectFit="contain" />
       </section>
       <article className={styles.section2Wrapper}>
         <h1 className="title">Web design</h1>

@@ -39,7 +39,7 @@ const Item: React.FC<any> = (props: any) => {
       </section>
       <section className={styles.ImgWrapper}>
         <section style={{ width: 150, height: 150, borderRadius: "50%", position: "relative" }}>
-          <Image src={props.link} layout="fill" objectFit="contain" />
+          <Image alt="" src={props.link} layout="fill" objectFit="contain" />
         </section>
       </section>
     </motion.li>

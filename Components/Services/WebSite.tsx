@@ -5,7 +5,7 @@ const WebSite: React.FC = () => {
   return (
     <div id="WebSite" className={styles.WebSite}>
       <section className={styles.ImgWrapper}>
-        <Image src="/Seo.svg" layout="fill" objectFit="contain" />
+        <Image alt="" src="/Seo.svg" layout="fill" objectFit="contain" />
       </section>
       <article className={styles.section2Wrapper}>
         <h1 className="title titleAdd">Web design</h1>

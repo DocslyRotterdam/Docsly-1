@@ -9,7 +9,7 @@ const CompanySolution: React.FC = () => {
       style={{ backgroundColor: "#263238", borderTopStyle: "solid", borderTopColor: "#263238", marginTop: "-1px", borderTopWidth: "3px" }}
     >
       <section className={styles.ImgWrapper}>
-        <Image src="/solution2.svg" layout="fill" objectFit="contain" />
+        <Image alt="" src="/solution2.svg" layout="fill" objectFit="contain" />
       </section>
       <article className={styles.section2Wrapper}>
         <h1 className="title titleAdd">Company solutions</h1>

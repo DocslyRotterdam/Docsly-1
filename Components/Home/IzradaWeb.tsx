@@ -28,16 +28,16 @@ const Pictures: React.FC<{ reverse?: boolean }> = ({ reverse }) => {
     return (
       <section className={styles.ImgWrapper} style={{ gridColumnStart: 2, gridColumnEnd: 3, display: "flex", gap: "0", justifyContent: "center" }}>
         <div className={styles.Android}>
-          <Image src="/iphone2.png" layout="fill" objectFit="contain" objectPosition="center" />
+          <Image alt="" src="/iphone2.png" layout="fill" objectFit="contain" objectPosition="center" />
         </div>
         <div className={styles.Android2}>
-          <Image src="/android.png" layout="fill" objectFit="contain" objectPosition="center" />
+          <Image alt="" src="/android.png" layout="fill" objectFit="contain" objectPosition="center" />
         </div>
       </section>
     );
   return (
     <section className={styles.ImgWrapper}>
-      <Image src="/komp.png" layout="fill" objectFit="contain" objectPosition="center" />
+      <Image alt="" src="/komp.png" layout="fill" objectFit="contain" objectPosition="center" />
     </section>
   );
 };

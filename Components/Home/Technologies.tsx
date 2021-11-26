@@ -34,7 +34,7 @@ const Card: React.FC<{ title: string; link: string; text: string }> = ({ title, 
   return (
     <motion.div animate={inView ? { opacity: 1 } : {}} className={styles.Card} ref={ref}>
       <section className={styles.ImgWrapper}>
-        <Image src={link} layout="fill" objectFit="contain" />
+        <Image alt="" src={link} layout="fill" objectFit="contain" />
       </section>
       <h2>{title}</h2>
       <p>{text}</p>

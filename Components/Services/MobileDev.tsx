@@ -5,7 +5,7 @@ const MobileDev: React.FC = () => {
   return (
     <div id="MobileDev" className={styles.WebDev} style={{ marginTop: 0, backgroundColor: "#e1bee7" }}>
       <section className={styles.ImgWrapper}>
-        <Image src="/flutter.svg" layout="fill" objectFit="contain" />
+        <Image alt="" src="/flutter.svg" layout="fill" objectFit="contain" />
       </section>
       <article className={styles.section2Wrapper}>
         <h1 className="title titleAdd">Mobile apps</h1>

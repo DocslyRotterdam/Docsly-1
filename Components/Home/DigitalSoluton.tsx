@@ -1,5 +1,4 @@
 import styles from "./DigitalSolution.module.scss";
-import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarCheck, faChartLine, faShieldAlt } from "@fortawesome/free-solid-svg-icons";
 
