@@ -26,11 +26,7 @@ const Items: React.FC = () => {
     </div>
   );
   function go_to_link(link: string) {
-    if (link === "Home") {
-      router.push("/");
-    } else {
-      router.push("/" + link);
-    }
+    router.push("/" + link);
   }
 };
 
