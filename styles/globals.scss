@@ -35,6 +35,9 @@
   &:hover .hiddenWave{
     transform: translate(0) rotate(0);
 }
+  &:hover .hiddenWave2{
+    transform: translate(0) rotate(0);
+}
 
 }
 .reverse{
@@ -44,6 +47,7 @@
   }
   &:hover{
     color:white !important;
+    
 }
 }
 .black{
@@ -58,6 +62,18 @@ z-index: -1;
 top:0;
 left:0;
 background-color: white;
+transform: translateY(120%) rotate(-5deg);
+transition-duration: 0.4s;
+
+}
+.hiddenWave2{
+position: absolute;
+width: 120%;
+height: 100%;
+z-index: 0;
+top:0;
+left:0;
+background-color: black;
 transform: translateY(120%) rotate(-5deg);
 transition-duration: 0.4s;
 
