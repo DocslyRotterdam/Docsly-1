@@ -36,7 +36,7 @@ const CardTwo: React.FC<{ inView: boolean }> = ({ inView }) => {
   return (
     <motion.div
       style={{ backgroundColor: "white" }}
-      transition={{ duration: 1, bounce: 0.1 }}
+      transition={{ duration: 0.4, bounce: 0.1 }}
       animate={inView ? { opacity: 1, x: 0 } : { x: "-50vw" }}
       className={styles.CardTwo}
     >

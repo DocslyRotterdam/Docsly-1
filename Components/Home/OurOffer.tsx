@@ -52,7 +52,13 @@ const Item: React.FC<any> = (props: any) => {
   });
 
   return (
-    <motion.li animate={inView ? { opacity: 1, y: 0 } : { y: "100%" }} ref={ref} style={{ opacity: 0 }} className={styles.li}>
+    <motion.li
+      transition={{ duration: 0.2, bounce: 0 }}
+      animate={inView ? { opacity: 1, y: 0 } : { y: "100%" }}
+      ref={ref}
+      style={{ opacity: 0 }}
+      className={styles.li}
+    >
       <section>
         <h2>{props.title}</h2>
         <p style={{ fontWeight: 100 }}>{props.text}</p>

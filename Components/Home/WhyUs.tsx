@@ -32,12 +32,7 @@ const Card: React.FC<{ icon: any; title: string }> = ({ icon, title }) => {
   return (
     <motion.article
       animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: "100%" }}
-      onMouseEnter={() => {
-        setInv(true);
-      }}
-      onMouseLeave={() => {
-        setInv(false);
-      }}
+      transition={{ duration: 0.2, bounce: 0 }}
       ref={ref}
       className={styles.Article}
     >

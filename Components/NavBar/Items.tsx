@@ -3,7 +3,7 @@ import styles from "./Items.module.scss";
 import MobileNavigation from "./MobileNavigation";
 
 const Items: React.FC<{ Selected: string }> = ({ Selected }) => {
-  const ItemsList = ["home", "About", "Services", "Contact", "Q&A"];
+  const ItemsList = ["Home", "About", "Services", "Contact", "Q&A"];
   const router = useRouter();
   return (
     <div className={styles.Items}>
@@ -27,7 +27,8 @@ const Items: React.FC<{ Selected: string }> = ({ Selected }) => {
     </div>
   );
   function go_to_link(link: string) {
-    router.push("/" + link);
+    if (link === "Home") router.push("/home");
+    else router.push("/" + link);
   }
 };
 

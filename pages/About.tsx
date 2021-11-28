@@ -17,7 +17,7 @@ const About: NextPage = () => {
         <meta name="description" content="Website creators netherlands" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <TransparentNavBar color="transparent" secondColor="black" Selected={"/About"} />
+      <TransparentNavBar color="transparent" secondColor="black" Selected={"About"} />
       <main className={styles.main}>
         <section className={AboutStyle.ImgWrapper}>
           <Image src="/office.jpg" priority={true} layout="fill" objectFit="cover" objectPosition="center" />
