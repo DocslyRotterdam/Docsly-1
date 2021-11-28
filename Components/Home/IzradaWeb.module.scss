@@ -4,6 +4,7 @@
     padding: 3rem 1rem;
     box-sizing: border-box;
     height: auto;
+    
     @media screen and (min-width:1000px) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -45,5 +46,11 @@
     height: 100%;
     @media screen and (max-width:1400px) {
         max-width: 70%;
+    }
+}
+
+.p{
+    @media screen and (max-width:1000px) {
+        text-align: center !important;
     }
 }

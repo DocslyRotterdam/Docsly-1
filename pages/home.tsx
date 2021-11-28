@@ -11,23 +11,24 @@ import DigitalSolution from "../Components/Home/DigitalSoluton";
 import WhyUs from "../Components/Home/WhyUs";
 import Technologies from "../Components/Home/Technologies";
 import { ContactFrom } from "../Components/SharedFolder/ContactForm";
+import ContactFormRetro from "../Components/SharedFolder/ContactFormRetro";
 
 const home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Docsly</title>
         <meta name="description" content="Website creators netherlands" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <MainNavBar />
+      <MainNavBar Selected={"Home"} />
       <main className={styles.main}>
         <div className={HomeStyles.title}>Quality first</div>
         <article className={HomeStyles.article}>
           <section style={{ width: "100%", height: "100%", minHeight: 350, position: "relative" }}>
-            <Image alt="web dev quality" src="/Quality.svg" layout="fill" objectFit="contain" objectPosition="center" />
+            <Image alt="web dev quality" priority={true} src="/Quality.svg" layout="fill" objectFit="contain" objectPosition="center" />
           </section>
-          <p className={HomeStyles.p}>
+          <div className={HomeStyles.p}>
             <span style={{ display: "block", margin: "2rem 0" }}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet lectus lorem. Vivamus nec purus ligula. Cras massa quam,
               vestibulum nec velit ac, laoreet dignissim massa. Nulla vel lorem ac velit cursus venenatis. Sed cursus velit varius ex lacinia, a
@@ -41,7 +42,7 @@ const home: NextPage = () => {
               Learn more
               <div className="hiddenWave" style={{ backgroundColor: "black" }}></div>
             </div>
-          </p>
+          </div>
         </article>
         <OurOffer />
         <IzradaWeb title="Izrada web stranica" />
@@ -49,7 +50,7 @@ const home: NextPage = () => {
         <IzradaWeb title="Izrada mobilnih aplikacija" reverse={true} />
         <WhyUs />
         <Technologies />
-        <ContactFrom />
+        <ContactFormRetro title="You have a question? We will get back as fast as we can!" />
       </main>
 
       <footer className=""></footer>

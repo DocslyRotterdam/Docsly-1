@@ -16,7 +16,7 @@ const Contact: NextPage = () => {
         <meta name="description" content="Website creators netherlands" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <TransparentNavBar color="transparent" secondColor="black" />
+      <TransparentNavBar Selected={"Contact"} color="transparent" secondColor="black" />
       <main className={styles.main} style={{ backgroundColor: "#F3F5FA" }}>
         <section className={AboutStyle.ImgWrapper}>
           <Image src="/office.jpg" priority={true} layout="fill" objectFit="cover" objectPosition="center" />

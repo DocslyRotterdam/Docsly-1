@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import Image from "next/image";
-import AboutStyle from "../styles/About.module.scss";
+import QAStyles from "../styles/QA.module.scss";
 import TransparentNavBar from "../Components/NavBar/TransparentNavBar";
-import { GoogleMaps } from "../Components/SharedFolder/GoogleMaps";
-import ContactBigForm from "../Components/Contact/ContactBigForm";
-import ContactInfo from "../Components/Contact/ContactInfo";
+
+import CommonQuestions from "../Components/Q&A/CommonQuestions";
+import Statistics from "../Components/Q&A/Statistics";
+import ContactFormRetro from "../Components/SharedFolder/ContactFormRetro";
 
 const Questions: NextPage = () => {
   return (
@@ -16,8 +16,15 @@ const Questions: NextPage = () => {
         <meta name="description" content="Website creators netherlands" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <TransparentNavBar color="black" secondColor="black" />
-      <main className={styles.main} style={{ backgroundColor: "#F3F5FA" }}></main>
+      <TransparentNavBar Selected="Q&A" color="black" secondColor="black" />
+      <main className={styles.main} style={{ backgroundColor: "white" }}>
+        <section className={QAStyles.Wrapper}>
+          <CommonQuestions />
+          <Statistics />
+        </section>
+        <h1 style={{ marginTop: "4rem" }}></h1>
+        <ContactFormRetro title="Didn't find the answer you were looking for?" />
+      </main>
 
       <footer className=""></footer>
     </div>

@@ -1,7 +1,8 @@
 import { useRouter } from "next/dist/client/router";
 import styles from "./Items.module.scss";
+import MobileNavigation from "./MobileNavigation";
 
-const Items: React.FC = () => {
+const Items: React.FC<{ Selected: string }> = ({ Selected }) => {
   const ItemsList = ["Home", "About", "Services", "Contact", "Q&A"];
   const router = useRouter();
   return (

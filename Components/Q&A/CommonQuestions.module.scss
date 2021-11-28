@@ -1,0 +1,13 @@
+.Wrapper{
+
+    width:90%;
+    margin:4rem auto;
+    max-width: 1000px;
+    flex-grow: 1;
+    @media screen and (max-width:800px) {
+        margin-top: 2rem;
+    }
+
+}
+
+//xl:absolute xl:top-10 right-4 w-full xl:w-1/3 p-2 xl:p-0

@@ -18,7 +18,7 @@ const home: NextPage = () => {
         <meta name="description" content="Software development Netherlands" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <MainNavBar fixed />
+      <MainNavBar Selected={"Services"} fixed />
       <main className={styles.main}>
         <TopBlock />
         <CircleServices />

@@ -7,7 +7,7 @@ const IzradaWeb: React.FC<{ title: string; reverse?: boolean }> = ({ title, reve
       <Pictures reverse={reverse} />
       <section className={styles.Section2} style={reverse ? { gridColumnStart: 1, gridColumnEnd: 2, gridRowStart: 1 } : {}}>
         <h2>{title}</h2>
-        <p style={{ textAlign: `${reverse ? "right" : "left"}`, maxWidth: "90%", margin: "2rem auto" }}>
+        <p className={styles.p} style={{ textAlign: `${reverse ? "right" : "left"}`, maxWidth: "90%", margin: "2rem auto" }}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut scelerisque sapien, non malesuada mi. Sed a ante sed sapien consectetur
           convallis. Maecenas ex erat, venenatis at urna rhoncus, condimentum ultrices sem. Proin ultricies orci at condimentum convallis. Nulla
           facilisi. Morbi dolor nisl, gravida sodales rhoncus id, volutpat ac felis. Maecenas condimentum vel quam sed imperdiet. Pellentesque
