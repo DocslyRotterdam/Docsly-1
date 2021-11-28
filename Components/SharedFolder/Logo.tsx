@@ -6,7 +6,7 @@ const Logo: React.FC<{ width?: number }> = ({ width }) => {
   return (
     <div
       onClick={() => {
-        router.push("/Home");
+        router.push("/home");
       }}
       style={width ? { width: width, height: width, cursor: "pointer" } : { cursor: "pointer" }}
       className={styles.wrapper}

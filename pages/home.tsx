@@ -13,7 +13,7 @@ import Technologies from "../Components/Home/Technologies";
 import { ContactFrom } from "../Components/SharedFolder/ContactForm";
 import ContactFormRetro from "../Components/SharedFolder/ContactFormRetro";
 
-const Home: NextPage = () => {
+const home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -58,4 +58,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default home;

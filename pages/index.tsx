@@ -41,7 +41,7 @@ const Index: NextPage = () => {
           <div
             className="buttonFill"
             onClick={() => {
-              router.push("/Home");
+              router.push("/home");
             }}
           >
             Discover <FontAwesomeIcon width="18" icon={faChevronRight} />

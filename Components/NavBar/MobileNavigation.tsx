@@ -4,7 +4,7 @@ import { useState } from "react";
 import styles from "./MobileNavigation.module.scss";
 
 const MobileNavigation: React.FC<{ Selected: string; show: boolean }> = ({ Selected, show }) => {
-  const ItemsList = ["Home", "About", "Services", "Contact", "Q&A"];
+  const ItemsList = ["home", "About", "Services", "Contact", "Q&A"];
   const [open, setOpen] = useState(false);
   const router = useRouter();
 

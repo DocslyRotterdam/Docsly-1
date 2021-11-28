@@ -11,7 +11,7 @@ const TransparentNavBar: React.FC<{ Selected: string; color?: string; secondColo
   const [hide, setHide] = useState(false);
   const [activate, setActivate] = useState(false);
   const router = useRouter();
-  useLayoutEffect(() => {
+  useEffect(() => {
     const s = new ScrollListener(setHide, setActivate);
     s.ScrollIng();
     s.ActivateOn100();
@@ -33,7 +33,7 @@ const TransparentNavBar: React.FC<{ Selected: string; color?: string; secondColo
 
         <h1
           onClick={() => {
-            router.push("/Home");
+            router.push("/home");
           }}
           className={styles.h1}
         >

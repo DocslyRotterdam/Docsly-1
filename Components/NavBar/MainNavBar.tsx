@@ -11,7 +11,7 @@ const MainNavBar: React.FC<{ Selected: string; fixed?: boolean }> = ({ Selected,
   const [hide, setHide] = useState(false);
   const router = useRouter();
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const s = new ScrollListener(setHide);
     s.ScrollIng();
   }, []);
@@ -28,7 +28,7 @@ const MainNavBar: React.FC<{ Selected: string; fixed?: boolean }> = ({ Selected,
 
         <h1
           onClick={() => {
-            router.push("/Home");
+            router.push("/home");
           }}
           className={styles.h1}
         >
